@@ -6,7 +6,7 @@ return (
     <Container>
       <Row>
         <h3 className="pt-4 text-center">Crear una nueva nota</h3>
-        <Col sm={8} className="pt m-auto shadow-sm rounded-lg" id="form">
+        <Col sm={9} className="pt m-auto rounded-lg" id="form">
           <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Titulo de la nota:</Form.Label>
@@ -21,10 +21,11 @@ return (
             </Form.Group>    
 
             <h5>Crear Elementos para la creacion de las notas</h5>
-
-            <Button variant="primary" type="submit">
-              Crear
+            <div className="d-grid gap-2">
+            <Button className="principal-button"  type="submit">
+              Crear Nueva Nota
             </Button>
+            </div>
           </Form>
         </Col>
       </Row>

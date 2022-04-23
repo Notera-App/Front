@@ -41,9 +41,11 @@ export const Register_Course = () => {
                   onChange={(e) => setDescription(e.target.value)}
                 />
               </Form.Group>
-              <Button variant="primary" type="submit">
-                Crear
-              </Button>
+              <div className="d-grid gap-2">
+                <Button className="principal-button" type="submit">
+                  Crear Nuevo Curso
+                </Button>
+                </div>            
             </Form>
           </Col>
         </Row>
