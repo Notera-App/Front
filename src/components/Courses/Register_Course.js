@@ -1,18 +1,20 @@
 import { useState } from "react";
 import { Container, Row, Form, Col, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import { useGlobalState } from "../GlobalState/GlobalState";
 
 export const Register_Course = () => {
+  const navigate = useNavigate();
   const [dataB, updateDataB] = useGlobalState("dataB");
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let d = dataB;
-    d.sections.push({ name: name, description: description });
-    updateDataB(d);
-    console.log(dataB);
+    let dataBtoUpdate = dataB;
+    dataBtoUpdate.sections.push({ name: name, description: description });
+    updateDataB(dataBtoUpdate);
+    navigate("/");
   };
   return (
     <div>
