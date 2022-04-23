@@ -73,6 +73,13 @@
   color: #CBF3F0;
 }
 
+/* Containers */
+
+.Principal-Container{
+  padding: 5%;
+}
+
+
 /* Botones */
 
 .principal-button{
@@ -84,11 +91,26 @@
   margin-bottom: 2em;
 }
 
-/* Elements Style */
-
-.items-center{
-  align-items: center !important;
+/* Sections */
+.accordion-button:not(.collapsed) {
+  color: #000 !important;
+  background-color: #FFBF69 !important;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 1  3%);
 }
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #FF9F1C !important; 
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(255 159 28 / 25%) !important;
+}
+
+/* Cards */
+.Note-Card{
+  background-color: #f4d06f !important;
+}
+
+/* Elements Style */
 
 @keyframes App-logo-spin {
   from {

@@ -2,7 +2,7 @@ import { Accordion, Button, Card, Container } from "react-bootstrap";
 
 export const NoteCardV = ({ concept }) => {
   return (
-    <Card>
+    <Card className="Note-Card">
       <Card.Body>
         <Card.Title>{concept.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">

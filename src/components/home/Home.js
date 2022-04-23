@@ -8,14 +8,15 @@ export const Home = () => {
   console.log(dataB);
   return (
     <Container>
-      <Button variant="secondary" size="lg">
+      <div className="d-grid gap-2">
+      <Button className="principal-button" size="lg">
         Agregar nueva nota
       </Button>
-
+      </div>
       <Accordion defaultActiveKey="0">
         {dataB?.sections?.map((section, index) => {
           return (
-            <Accordion.Item eventKey={index} key={section.name}>
+            <Accordion.Item className="sections" eventKey={index} key={section.name}>
               <Accordion.Header>{section.name}</Accordion.Header>
               <Accordion.Body>
                 <Row lg={3}>
