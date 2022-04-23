@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { NavigationBar } from "./components/NavigationBar/NavigationBar";
+import { Home } from "./components/home/Home";
 
 function App() {
   return (
@@ -24,10 +25,6 @@ function App() {
       </header>
     </Router>
   );
-}
-
-function Home() {
-  return <>asdasd</>;
 }
 
 export default App;
