@@ -10,7 +10,6 @@ import {
 } from "react-router-dom";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { NavigationBar } from "./components/NavigationBar/NavigationBar";
-import { Footer } from "./components/footer/Footer";
 
 function App() {
   return (
