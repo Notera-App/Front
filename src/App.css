@@ -28,6 +28,51 @@
   color: #61dafb;
 }
 
+.text-center{
+  text-align: center;
+}
+
+/* Colores de Fondo y de Texto */
+.bg-Orange{
+  background-color: #FF9F1C !important;
+}
+.bg-Peach {
+  background-color: #FFBF69 !important;
+}
+.bg-White{
+  background-color: #FFFFFF !important;
+}
+.bg-Sky {
+  background-color: #2EC4B6 !important;
+}
+
+.bg-LigthBlue {
+  background-color: #CBF3F0 !important;
+}
+
+.bg-Black {
+  background-color: #000 !important;
+}
+
+.text-White {
+  color: #FFFFFF !important;
+}
+
+.text-Peach {
+  color: #FFBF69 !important;
+}
+.text-Black {
+  color: #000 !important;
+}
+
+.text-Sky {
+  color: #2EC4B6;
+}
+.text-LigthBlue {
+  color: #CBF3F0;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
