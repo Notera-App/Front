@@ -9,14 +9,19 @@ export const Home = () => {
   return (
     <Container>
       <div className="d-grid gap-2">
-      <Button className="principal-button" size="lg">
-        Agregar nueva nota
-      </Button>
+        <Button className="principal-button" size="lg">
+          Agregar nueva nota
+        </Button>
       </div>
-      <Accordion defaultActiveKey="0">
+
+      <Accordion defaultActiveKey={["0"]} alwaysOpen>
         {dataB?.sections?.map((section, index) => {
           return (
-            <Accordion.Item className="sections" eventKey={index} key={section.name}>
+            <Accordion.Item
+              className="sections"
+              eventKey={index}
+              key={section.name}
+            >
               <Accordion.Header>{section.name}</Accordion.Header>
               <Accordion.Body>
                 <Row lg={3}>
