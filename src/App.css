@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: center;  
 }
 
 .App-logo {
@@ -28,6 +28,7 @@
   color: #61dafb;
 }
 
+/* Alineaciones de textos */
 .text-center{
   text-align: center;
 }
@@ -72,6 +73,22 @@
   color: #CBF3F0;
 }
 
+/* Botones */
+
+.principal-button{
+  background-color: #FF9F1C !important;
+  color: #000 !important;
+  border-style:solid;
+  border-color: #FF9F1C !important;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+/* Elements Style */
+
+.items-center{
+  align-items: center !important;
+}
 
 @keyframes App-logo-spin {
   from {
