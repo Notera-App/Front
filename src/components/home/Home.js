@@ -13,15 +13,15 @@ export const Home = () => {
       </Button>
 
       <Accordion defaultActiveKey="0">
-        {dataB.sections.map((section, index) => {
+        {dataB?.sections?.map((section, index) => {
           return (
-            <Accordion.Item eventKey={index}>
+            <Accordion.Item eventKey={index} key={section.name}>
               <Accordion.Header>{section.name}</Accordion.Header>
               <Accordion.Body>
                 <Row lg={3}>
-                  {section.concepts.map((concept) => {
+                  {section?.concepts?.map((concept) => {
                     return (
-                      <Col>
+                      <Col key={concept.title}>
                         <NoteCardV concept={concept} />
                       </Col>
                     );
