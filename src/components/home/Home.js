@@ -12,7 +12,7 @@ export const Home = () => {
         Agregar nueva nota
       </Button>
 
-      <Accordion defaultActiveKey="0">
+      <Accordion defaultActiveKey={['0']} alwaysOpen>
         {dataB?.sections?.map((section, index) => {
           return (
             <Accordion.Item eventKey={index} key={section.name}>
