@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
   Switch,
@@ -7,43 +8,27 @@ import {
   Link,
   Routes,
 } from "react-router-dom";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { NavigationBar } from "./components/NavigationBar/NavigationBar";
+import { Footer } from "./components/footer/Footer";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Routes>
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </div>
+    <Router className="App">
+      <NavigationBar />
+      <header>
+        <Container>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </Container>
+      </header>
     </Router>
   );
 }
 
 function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
+  return <>asdasd</>;
 }
 
 export default App;
