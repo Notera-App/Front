@@ -12,7 +12,12 @@ export const Register_Course = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     let dataBtoUpdate = dataB;
-    dataBtoUpdate.sections.push({ name: name, description: description });
+    dataBtoUpdate.sections.push({
+      id: name,
+      name: name,
+      description: description,
+      concepts: [],
+    });
     updateDataB(dataBtoUpdate);
     navigate("/");
   };
@@ -45,7 +50,7 @@ export const Register_Course = () => {
                 <Button className="principal-button" type="submit">
                   Crear Nuevo Curso
                 </Button>
-                </div>            
+              </div>
             </Form>
           </Col>
         </Row>

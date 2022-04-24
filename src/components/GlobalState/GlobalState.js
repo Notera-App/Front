@@ -4,6 +4,7 @@ const { useGlobalState } = createGlobalState({
   dataB: {
     sections: [
       {
+        id: "Ciencias naturales",
         name: "Ciencias naturales",
         description: "Mi notas de ciencias naturales",
         concepts: [
@@ -43,6 +44,7 @@ const { useGlobalState } = createGlobalState({
         ],
       },
       {
+        id: "seccion 2",
         name: "Seccion 2",
         description: "Descripcion de la seccion 1",
         concepts: [
