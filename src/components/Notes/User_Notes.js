@@ -32,15 +32,14 @@ export const User_Notes = () => {
   };
 
   const handleSearchCategory = (e) => {
-    // console.log("Buscando por categoria");
-    // console.log(e.target.name);
+    handleClose()
     setCategory(e.target.name);
   };
   return (
     <Container className="Principal-Container">
       <Button
         className="floating-button p-0 m-0"
-        variant="warning"
+        variant="dark"
         onClick={handleShow}
       >
         <MdManageSearch color="white" size={30} />
@@ -52,15 +51,15 @@ export const User_Notes = () => {
         scroll="true"
       >
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title className="text-center">
+          <Offcanvas.Title className="text-center text-Silver">
             Filtrar Notas
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <Form onSubmit={handleSubmit}>
+          <Form className="text-Silver" onSubmit={handleSubmit}>
             Filtrar por nombre
-            <Form.Control
-              className="x  "
+            <Form.Control            
+              className="x text-Silver"
               type="search"
               value={searchString}
               onChange={handleSearchStringChange}

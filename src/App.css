@@ -211,10 +211,10 @@
 
 .Card-Container{
   background-color: #CFDBD5 !important;
-  border-color: #333533 !important; 
-  border-style: solid;
-  border-radius: 10%;  
+  border-color: #333533 !important;   
+  border-radius: 5%;  
   margin-bottom: 2em;
+  padding-top: 0.2em;
 }
 
 .FlipCard{
