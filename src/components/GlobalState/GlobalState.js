@@ -95,6 +95,13 @@ const { useGlobalState } = createGlobalState({
                 type: "text",
               },
             ],
+            MapaConceptual: [
+              {
+                value:
+                  "https://i.ibb.co/Gt2Y7bz/Mapa-Conceptual.png",
+                type: "img",
+              },
+            ]
           },          
         ],
       },
