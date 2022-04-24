@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { Button, Modal } from "react-bootstrap";
-import { MdOutlineFlipCameraAndroid } from "react-icons/md";
-import { FlipCard } from "../Notes/FlipCard";
+import { Button, Modal, Image } from "react-bootstrap";
+import { BiSitemap } from "react-icons/bi";
 
-export const FlipActivity = ({ concept }) => {
+export const ConceptualMap = ({ concept }) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -11,22 +10,31 @@ export const FlipActivity = ({ concept }) => {
 
   return (
     <>
-      <Button className="icon-button" title="Voltear Card" onClick={handleShow}>
-        <MdOutlineFlipCameraAndroid />
+      <Button
+        className="icon-button"
+        title="Mapa Conceptual"
+        onClick={handleShow}
+      >
+        <BiSitemap />
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>concept.title</Modal.Title>
+      <Modal show={show} onHide={handleClose} className="fullscreen-modal">
+        <Modal.Header closeButton className="Modal-Conceptual-Header">
+          <Modal.Title>Mapa Conceptual - {concept.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>            
+        <Modal.Body className="Modal-Conceptual-Body">
+        {concept.MapaConceptual ? (                             
+            <Image  fluid                 
+              src={concept?.MapaConceptual}
+              alt="Mapa Conceptual"              
+            />               
+        ) : <>
+        </>
+        }                
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
+            Salir
           </Button>
         </Modal.Footer>
       </Modal>

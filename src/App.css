@@ -212,8 +212,14 @@
 
 }
 .Modal-Flip{
-  background-color: #000000c0 !important;
+  background-color: #000000c0 !important;  
 }
+
+.Modal-MapaConceptual{
+  background-color: #000000c0 !important;  
+  height: 100%;
+}
+
 
 .Modal-Flip-Header{
   background-color: skyblue !important;
@@ -223,6 +229,15 @@
   background-color: white !important;
   min-height: 25em;
   max-height: 25em;
+
+}
+
+.Modal-Conceptual-Header{
+  background-color: #f4845f !important;
+}
+
+.Modal-Conceptual-Body{
+  background-color: white !important;  
 
 }
 /* Text */

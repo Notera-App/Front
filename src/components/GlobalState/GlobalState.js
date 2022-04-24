@@ -73,6 +73,7 @@ const { useGlobalState } = createGlobalState({
           {
             title: "Base de Datos",
             description: "Fundamentos de Bases de Datos",
+            MapaConceptual: "https://i.ibb.co/GW63c1v/Mapa-Conceptual2.png",
             content: [
               {
                 value:
@@ -94,14 +95,7 @@ const { useGlobalState } = createGlobalState({
                   "Las bases de datos pueden clasificarse de varias maneras, de acuerdo al contexto que se esté manejando, la utilidad de las mismas o las necesidades que satisfagan.",
                 type: "text",
               },
-            ],
-            MapaConceptual: [
-              {
-                value:
-                  "https://i.ibb.co/Gt2Y7bz/Mapa-Conceptual.png",
-                type: "img",
-              },
-            ]
+            ],                       
           },          
         ],
       },

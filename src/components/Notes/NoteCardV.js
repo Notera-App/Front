@@ -8,6 +8,7 @@ import { TextToVoice } from "../elements/TextToVoice";
 import { useState } from "react";
 import { getValue } from "@testing-library/user-event/dist/utils";
 import { FlipActivity } from "../elements/FlipActivity";
+import { ConceptualMap } from "../elements/ConceptualMap";
 
 export const NoteCardV = ({ concept }) => {
   const [color, setColor] = useState("f4d06f");
@@ -48,9 +49,8 @@ export const NoteCardV = ({ concept }) => {
       </Card>
       <Row>
         <Col className="m-auto" sm>
-          <Button className="icon-button p-auto" title="Mapa Conceptual">
-            <BiSitemap />
-          </Button>
+          <ConceptualMap concept={concept}>
+          </ConceptualMap>          
           <FlipActivity concept={concept} />
           <TextToVoice title={concept.title} content={concept.content} />
           <Button className="icon-button" title="Cuestionario">
