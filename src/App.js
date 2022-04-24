@@ -13,6 +13,7 @@ import { Home } from "./components/home/Home";
 import { Register_Course } from "./components/Courses/Register_Course";
 import { Register_Notes } from "./components/Notes/Register_Notes";
 import { User_Notes } from "./components/Notes/User_Notes";
+import { Courses } from "./components/Courses/Courses";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Container>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/sections" element={<Courses />} />
             <Route path="/course-register" element={<Register_Course />} />
             <Route path="/notes-register" element={<Register_Notes />} />
             <Route path="/concepts" element={<User_Notes />} />
