@@ -17,7 +17,7 @@ export const FlipCard = ({ front, back, st = false }) => {
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       {/* Parte Frontal de la Card */}
-      <button className="m-0 p-0" onClick={handleClick} className="FlipCard">
+      <button className="m-0 p-0 FlipCard" onClick={handleClick}>
         {front.type === "title" ? (
           <h3 className="text-center">{front.value}</h3>
         ) : (
@@ -27,7 +27,7 @@ export const FlipCard = ({ front, back, st = false }) => {
         {front.type === "image" ? <Image fluid src={front.value} /> : <></>}
       </button>
       {/* Parte Trasera de la Card */}
-      <button className="m-0 p-0" onClick={handleClick} className="FlipCard">
+      <button className="m-0 p-0 FlipCard" onClick={handleClick}>
         {back.type === "title" ? (
           <h4 className="text-center">{back.value}</h4>
         ) : (
