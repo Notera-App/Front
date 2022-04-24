@@ -1,5 +1,13 @@
 import { useState } from "react";
-import { Container, Row, Form, Col, Button } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Form,
+  Col,
+  Button,
+  InputGroup,
+  FormControl,
+} from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useGlobalState } from "../GlobalState/GlobalState";
 
@@ -10,6 +18,7 @@ export const Register_Notes = () => {
   const [content, setContent] = useState([]);
   const [dataB, updateDataB] = useGlobalState("dataB");
   const [section, setSection] = useState(dataB.sections[0].id);
+  const [currentContent, setCurrentContent] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,6 +33,11 @@ export const Register_Notes = () => {
       });
     updateDataB(dataBtoUpdate);
     navigate("/");
+  };
+
+  const addContent = (parType) => {
+    content.push({ value: currentContent, type: parType });
+    setCurrentContent("");
   };
   return (
     <div>
@@ -60,6 +74,32 @@ export const Register_Notes = () => {
               </Form.Group>
 
               <h5>Crear Elementos para la creacion de las notas</h5>
+              <InputGroup>
+                <FormControl
+                  placeholder="Agrega tu contenido aqui"
+                  aria-label="Recipient's new content"
+                  onChange={(e) => setCurrentContent(e.target.value)}
+                  value={currentContent}
+                />
+                <Button
+                  variant="outline-secondary"
+                  onClick={() => addContent("title")}
+                >
+                  Titulo
+                </Button>
+                <Button
+                  variant="outline-secondary"
+                  onClick={() => addContent("text")}
+                >
+                  Texto
+                </Button>
+                <Button
+                  variant="outline-secondary"
+                  onClick={() => addContent("image")}
+                >
+                  Imagen
+                </Button>
+              </InputGroup>
               <div className="d-grid gap-2">
                 <Button className="principal-button" type="submit">
                   Crear Nueva Nota
