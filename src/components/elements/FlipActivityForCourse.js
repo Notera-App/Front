@@ -57,7 +57,14 @@ export const FlipActivityForCourse = ({ section }) => {
       }
     });
 
-    console.log(flips.length);
+    if (flips.length) {
+      setActualFlip({
+        front: { value: "¿Listo para iniciar?", type: "title" },
+        back: { value: "¿Listo para iniciar?", type: "title" },
+        st: false,
+      });
+      console.log(flips.length);
+    }
   }, []);
 
   return (
@@ -75,12 +82,12 @@ export const FlipActivityForCourse = ({ section }) => {
           <Row className="text-center">
             <Col>
               <Button className="icon-button">
-                <AiOutlineDislike />
+                <AiOutlineDislike onClick={nextFlip} />
               </Button>
             </Col>
             <Col>
               <Button className="icon-button">
-                <AiOutlineLike />
+                <AiOutlineLike onClick={nextFlip} />
               </Button>
             </Col>
           </Row>
