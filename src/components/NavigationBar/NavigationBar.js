@@ -1,5 +1,8 @@
 import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { LoginButton } from "../Auth/Login";
+import { LogoutButton } from "../Auth/Logout";
+
 import logo from "../../assets/Logo.png";
 
 export const NavigationBar = () => {
@@ -37,7 +40,7 @@ export const NavigationBar = () => {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-        <Button onClick={handleLogin}> Iniciar sesión</Button>
+        <LoginButton/>
       </Container>
     </Navbar>
   );
