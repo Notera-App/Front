@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { Button, Modal } from "react-bootstrap";
+import { Button, Col, Modal, Row } from "react-bootstrap";
 import { MdOutlineFlipCameraAndroid } from "react-icons/md";
 import { FlipCard } from "../Notes/FlipCard";
+import { AiOutlineDislike, AiOutlineLike } from "react-icons/ai";
 
 export const FlipActivityForCourse = ({ section }) => {
   const [show, setShow] = useState(false);
@@ -71,6 +72,18 @@ export const FlipActivityForCourse = ({ section }) => {
         </Modal.Header>
         <Modal.Body className="Modal-Flip-Body">
           <FlipCard {...actualFlip} />
+          <Row className="text-center">
+            <Col>
+              <Button className="icon-button">
+                <AiOutlineDislike />
+              </Button>
+            </Col>
+            <Col>
+              <Button className="icon-button">
+                <AiOutlineLike />
+              </Button>
+            </Col>
+          </Row>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
