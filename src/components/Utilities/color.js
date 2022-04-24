@@ -1,4 +1,4 @@
-//Definicion de algunos colores a usar.
+//Definicion de algunos colores a usar el momento de cambiar las cartas de color.
 export const COLORS = {
   orange: "#FF9F1C",
   peach: "#FFBF69",
