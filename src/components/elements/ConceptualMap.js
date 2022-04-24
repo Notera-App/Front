@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button, Modal, Image } from "react-bootstrap";
 import { BiSitemap } from "react-icons/bi";
 
+//Ventana emergente donde se visualizara el mapa conceptual.
 export const ConceptualMap = ({ concept }) => {
   const [show, setShow] = useState(false);
 

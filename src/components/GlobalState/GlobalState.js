@@ -1,3 +1,4 @@
+// Datos de la aplicacion en local
 import { createGlobalState } from "react-hooks-global-state";
 const { useGlobalState } = createGlobalState({
   //   dataB: JSON.parse(localStorage.getItem("dataB")),

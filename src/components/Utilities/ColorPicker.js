@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { PhotoshopPicker } from "react-color";
 
+//Funcion encargada de cambiar el color de las notas.
 export const ColorPicker = ({ concept }) => {
     const [color, setColor] = useState("#ff0000");
   return (

@@ -15,6 +15,7 @@ import { NoteCardV } from "../Notes/NoteCardV";
 import { NoteFlipCard } from "../Notes/NoteFlipCard";
 import { MdManageSearch } from "react-icons/md";
 
+//Funcion encargada de buscar las notas del usuario para su visualizacion.
 export const User_Notes = () => {
   const [dataB] = useGlobalState("dataB");
   const [show, setShow] = useState(false);

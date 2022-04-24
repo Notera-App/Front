@@ -3,6 +3,7 @@ import { Container, Row, Form, Col, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useGlobalState } from "../GlobalState/GlobalState";
 
+//Funcion encargada de registrar un curso.
 export const Register_Course = () => {
   const navigate = useNavigate();
   const [dataB, updateDataB] = useGlobalState("dataB");

@@ -1,5 +1,6 @@
 import { Image } from "react-bootstrap";
 
+//Contenido interno de las notas
 export const Cont = ({ content }) => {
   return content?.map((cont) => {
     return (
