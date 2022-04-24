@@ -216,6 +216,9 @@
 .text-left{
   text-align: left;
 }
+.text-justify{
+  text-align: justify;
+}
 
 /* Fields */
 .search-field:focus {

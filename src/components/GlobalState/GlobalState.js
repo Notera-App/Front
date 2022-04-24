@@ -41,33 +41,61 @@ const { useGlobalState } = createGlobalState({
               },
             ],
           },
+          {
+            title: "El Estado",
+            description: "Características de React",
+            content: [
+              {
+                value:
+                  "El estado de un componente se define como una representación del mismo en un momento concreto, es decir, una instantánea del propio componente. Existen dos tipos de componentes con y sin estado, denominados statefull y stateless.",
+                type: "text",
+              },
+            ],
+          },
+          {
+            title: "Ciclos de Vida",
+            description: "Características de React",
+            content: [
+              {
+                value:
+                  "El ciclo de vida es una serie de estados por los cuales pasan los componentes statefull a lo largo de su existencia. Se pueden clasificar en tres etapas de montaje o inicialización, actualización y destrucción. Dichas etapas tienen correspondencia en diversos métodos.",
+                type: "text",
+              },
+            ],
+          },
         ],
       },
       {
-        id: "seccion 2",
-        name: "Seccion 2",
-        description: "Descripcion de la seccion 1",
+        id: "Bases de Datos",
+        name: "Bases de Datos",
+        description: "Fundamentos de bases de datos",
         concepts: [
           {
-            title: "Concepto 1 s2",
-            description: "Descripcion del concepto 1",
-            content: [],
-          },
-          {
-            title: "Concepto 2 s2",
-            description: "Descripcion del concepto 2",
-            content: [],
-          },
-          {
-            title: "Concepto 3 s2",
-            description: "Descripcion del concepto 3",
-            content: [],
-          },
-          {
-            title: "Concepto 4 s2",
-            description: "Descripcion del concepto 4",
-            content: [],
-          },
+            title: "Base de Datos",
+            description: "Fundamentos de Bases de Datos",
+            content: [
+              {
+                value:
+                  "Definicion de base de Datos",
+                type: "title",
+              },
+              {
+                value:
+                  "Una base de datos se encarga no solo de almacenar datos, sino también de conectarlos entre sí en una unidad lógica. En términos generales, una base de datos es un conjunto de datos estructurados que pertenecen a un mismo contexto y, en cuanto a su función, se utiliza para administrar de forma electrónica grandes cantidades de información.",
+                type: "text",
+              },
+              {
+                value:
+                  "Clasificación de bases de datos",
+                type: "title",
+              },
+              {
+                value:
+                  "Las bases de datos pueden clasificarse de varias maneras, de acuerdo al contexto que se esté manejando, la utilidad de las mismas o las necesidades que satisfagan.",
+                type: "text",
+              },
+            ],
+          },          
         ],
       },
     ],
