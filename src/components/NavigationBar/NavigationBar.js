@@ -2,11 +2,13 @@ import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { LoginButton } from "../Auth/Login";
 import { LogoutButton } from "../Auth/Logout";
+import { useAuth0 } from "@auth0/auth0-react";
 
 import logo from "../../assets/Logo.png";
 
 export const NavigationBar = () => {
   const handleLogin = () => {};
+  const { user, isAuthenticated, isLoading } = useAuth0();
   return (
     <Navbar bg="Orange" expand="lg">
       <Container>
@@ -40,7 +42,7 @@ export const NavigationBar = () => {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-        <LoginButton/>
+        {isAuthenticated ? <p>Logged: {user.email}</p> : <LoginButton />}
       </Container>
     </Navbar>
   );
