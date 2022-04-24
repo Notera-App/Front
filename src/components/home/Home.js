@@ -4,6 +4,7 @@ import { TextToVoice } from "../elements/TextToVoice";
 import { useGlobalState } from "../GlobalState/GlobalState";
 import { FlipCard } from "../Notes/FlipCard";
 import { NoteCardV } from "../Notes/NoteCardV";
+import SpeechtoText from "../elements/voiceToText";
 
 export const Home = () => {
   const [dataB] = useGlobalState("dataB");
@@ -11,7 +12,12 @@ export const Home = () => {
   return (
     <Container>
       <div className="d-grid gap-2">
-        <Button className="principal-button" size="lg">
+        <Button
+          className="principal-button"
+          as={Link}
+          to="/notes-register"
+          size="lg"
+        >
           Agregar nueva nota
         </Button>
       </div>

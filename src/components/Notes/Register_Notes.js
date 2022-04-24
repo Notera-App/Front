@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Container,
   Row,
@@ -10,8 +10,12 @@ import {
   Image,
 } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import SpeechRecognition, {
+  useSpeechRecognition,
+} from "react-speech-recognition";
 import { useGlobalState } from "../GlobalState/GlobalState";
 import { Cont } from "./Cont";
+import { BsFillRecordCircleFill, BsPauseCircleFill } from "react-icons/bs";
 
 export const Register_Notes = () => {
   const navigate = useNavigate();
@@ -21,7 +25,25 @@ export const Register_Notes = () => {
   const [dataB, updateDataB] = useGlobalState("dataB");
   const [section, setSection] = useState(dataB.sections[0].id);
   const [currentContent, setCurrentContent] = useState("");
+  const [voiceToTxt, setVoiceToTxt] = useState(false);
+  const {
+    transcript,
+    listening,
+    resetTranscript,
+    browserSupportsSpeechRecognition,
+  } = useSpeechRecognition();
 
+  useEffect(() => {
+    if (voiceToTxt) {
+      SpeechRecognition.startListening();
+    } else {
+      SpeechRecognition.stopListening();
+    }
+  }, [voiceToTxt]);
+
+  useEffect(() => {
+    setCurrentContent(transcript);
+  }, [transcript]);
   const handleSubmit = (e) => {
     e.preventDefault();
     let dataBtoUpdate = dataB;
@@ -106,6 +128,20 @@ export const Register_Notes = () => {
                 >
                   Imagen
                 </Button>
+                {browserSupportsSpeechRecognition ? (
+                  <Button
+                    variant="outline-secondary"
+                    onClick={() => setVoiceToTxt(!voiceToTxt)}
+                  >
+                    {listening ? (
+                      <BsPauseCircleFill color="red" />
+                    ) : (
+                      <BsFillRecordCircleFill color="red" />
+                    )}
+                  </Button>
+                ) : (
+                  <></>
+                )}
               </InputGroup>
               <div className="d-grid gap-2">
                 <Button className="principal-button" type="submit">
