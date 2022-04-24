@@ -3,6 +3,8 @@ import { Card, Image } from "react-bootstrap";
 import { Cont } from "./Cont";
 import { useEffect, useState } from "react";
 
+//Componente de la flip card para reutilizar donde se necesite.
+
 export const FlipCard = ({ front, back, st = false }) => {
   const [isFlipped, setFlip] = useState(st);
   useEffect(() => {
