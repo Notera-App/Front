@@ -1,6 +1,6 @@
 # Notera-app
 
-_Notera-app está pensada para favorecer la personalización del aprendizaje abordando la problemática XXXXX, ofreciendo una solución que permite crear y organizar notas con las cuales generar diferentes tipos de contenido que sea útil para mejorar el proceso de aprendizaje de una forma personalizada y pensada para diferentes estilos de aprendizaje._
+_Notera-app está pensada para favorecer la personalización del aprendizaje abordando la problemática encontrada, ofreciendo una solución que permite crear y organizar notas con las cuales generar diferentes tipos de contenido que sea útil para mejorar el proceso de aprendizaje de una forma personalizada y pensada para diferentes estilos de aprendizaje._
 
 ## Despliegue 📦
 
