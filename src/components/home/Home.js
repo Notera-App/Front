@@ -6,6 +6,8 @@ import { FlipCard } from "../Notes/FlipCard";
 import { NoteCardV } from "../Notes/NoteCardV";
 import SpeechtoText from "../elements/voiceToText";
 
+
+//Vista principal de la aplicacion.
 export const Home = () => {
   const [dataB] = useGlobalState("dataB");
   console.log(dataB);
