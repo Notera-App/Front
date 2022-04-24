@@ -91,13 +91,31 @@
   margin-bottom: 2em;
 }
 
+.principal-button:focus {
+  z-index: 3;
+  border-color: #FF9F1C !important; 
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(255 159 28 / 25%) !important;
+}
+
 .secondary-button{
   background-color: #000 !important;
   color: #FF9F1C !important;
   border-style:solid;
+  width: 100%;
   border-color: #000 !important;
   margin-right: 1em;
   margin-bottom: 1em;
+}
+
+.secondary-button:focus{
+  background-color: #FF9F1C !important;
+  color: #000 !important;
+  border-style:solid;
+  border-color: #FF9F1C !important;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 0 0 0.25rem rgb(255 159 28 / 25%) !important;
 }
 
 .icon-button{
@@ -137,6 +155,20 @@
   box-shadow: 0 0 0 0.25rem rgb(255 159 28 / 25%) !important;
 }
 
+/* Floating Button */
+
+.floating-button {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  bottom: 50%;
+  right: 97%;
+  border-color: transparent !important;
+  text-align: center;  
+  border-radius: 100% !important;
+}
+
+
 /* Cards */
 .Note-Card{
   background-color: #f4d06f !important;
@@ -158,7 +190,29 @@
 .text-left{
   text-align: left;
 }
-/* Elements Style */
+
+/* Fields */
+.search-field:focus {
+    z-index: 3;
+    border-color: #FF9F1C !important; 
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(255 159 28 / 25%) !important;
+}
+
+/* Media Style */
+
+@media only screen and (max-width: 900px) {
+  .floating-button {
+    right: 96%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .floating-button {
+    right: 95%;
+  }
+}
+
 
 @keyframes App-logo-spin {
   from {
