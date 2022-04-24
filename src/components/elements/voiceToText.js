@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import SpeechRecognition ,{ useSpeechRecognition }from "react-speech-recognition";
 
+//Componente encargado de convertir la voz del usuario en texto legible.
 const SpeechtoText = () => {
     const {transcript, resetTranscript } = useSpeechRecognition()
 
