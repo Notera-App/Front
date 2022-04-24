@@ -10,7 +10,7 @@ export const Cont = ({ content }) => {
           <></>
         )}
         {cont.type === "text" ? <p>{cont.value}</p> : <></>}
-        {cont.type === "image" ? <Image src={cont.value} /> : <></>}
+        {cont.type === "image" ? <Image fluid  src={cont.value} /> : <></>}
       </>
     );
   });

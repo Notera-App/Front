@@ -15,7 +15,7 @@ export const Home = () => {
         </Button>
       </div>
 
-      <Accordion defaultActiveKey={["0"]} alwaysOpen>
+      <Accordion defaultActiveKey={[0]} alwaysOpen>
         {dataB?.sections?.map((section, index) => {
           return (
             <Accordion.Item
