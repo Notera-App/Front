@@ -7,9 +7,11 @@ import {
   Button,
   InputGroup,
   FormControl,
+  Image,
 } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useGlobalState } from "../GlobalState/GlobalState";
+import { Cont } from "./Cont";
 
 export const Register_Notes = () => {
   const navigate = useNavigate();
@@ -36,8 +38,10 @@ export const Register_Notes = () => {
   };
 
   const addContent = (parType) => {
-    content.push({ value: currentContent, type: parType });
-    setCurrentContent("");
+    if (content !== "") {
+      content.push({ value: currentContent, type: parType });
+      setCurrentContent("");
+    }
   };
   return (
     <div>
@@ -72,6 +76,10 @@ export const Register_Notes = () => {
                   onChange={(e) => setDescription(e.target.value)}
                 />
               </Form.Group>
+
+              <Container className="Content-show">
+                <Cont content={content} />
+              </Container>
 
               <h5>Crear Elementos para la creacion de las notas</h5>
               <InputGroup>
