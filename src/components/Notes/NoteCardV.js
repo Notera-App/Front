@@ -51,7 +51,7 @@ export const NoteCardV = ({ concept }) => {
           <Button className="icon-button p-auto" title="Mapa Conceptual">
             <BiSitemap />
           </Button>
-          <FlipActivity concept={concept} />
+          {/* <FlipActivity concept={concept} /> */}
           <TextToVoice title={concept.title} content={concept.content} />
           <Button className="icon-button" title="Cuestionario">
             <AiFillQuestionCircle />

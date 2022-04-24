@@ -3,8 +3,8 @@ import { Card, Image } from "react-bootstrap";
 import { Cont } from "./Cont";
 import { useState } from "react";
 
-export const FlipCard = ({ front, back }) => {
-  const [isFlipped, setFlip] = useState(false);
+export const FlipCard = ({ front, back, st = false }) => {
+  const [isFlipped, setFlip] = useState(st);
 
   const handleClick = (e) => {
     e.preventDefault();
