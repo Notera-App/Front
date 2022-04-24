@@ -85,7 +85,7 @@ export const User_Notes = () => {
         </Offcanvas.Body>
       </Offcanvas>
       <Accordion defaultActiveKey="0">
-        <Row lg="3">
+        <Row xs="1" sm="2" md="2" lg="3">
           {dataB?.sections
            /* Filtro para categoria de Cursos */
             .filter(

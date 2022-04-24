@@ -10,7 +10,9 @@ export const NoteCardV = ({ concept }) => {
   return (
     <Card className="Note-Card">
       <Card.Body>
-        <Card.Title className="text-center">{concept.title}</Card.Title>
+        <Card.Title className="text-center">
+          <h2>{concept.title}</h2>
+        </Card.Title>
         <Card.Subtitle className="mb-2 text-muted">
           {concept.description}
         </Card.Subtitle>
