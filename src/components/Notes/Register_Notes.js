@@ -25,7 +25,6 @@ export const Register_Notes = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     let dataBtoUpdate = dataB;
-    console.log(section);
     dataBtoUpdate.sections
       .filter((sectionD) => sectionD.id === section)[0]
       ?.concepts.push({

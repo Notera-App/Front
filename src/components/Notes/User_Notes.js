@@ -18,7 +18,6 @@ import { MdManageSearch } from "react-icons/md";
 export const User_Notes = () => {
   const [dataB] = useGlobalState("dataB");
   const [show, setShow] = useState(false);
-  console.log(dataB);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const [searchString, setSearchString] = useState("");
