@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import { useGlobalState } from "../GlobalState/GlobalState";
 import { useState } from "react";
 import { NoteCardV } from "../Notes/NoteCardV";
+import { NoteFlipCard } from "../Notes/NoteFlipCard";
 import { MdManageSearch } from "react-icons/md";
 
 export const User_Notes = () => {
@@ -108,6 +109,7 @@ export const User_Notes = () => {
                       return (
                         <Col className="mr-1 mb-1 mt-1" key={concept.title}>
                           <NoteCardV concept={concept} />
+                          {/* <NoteFlipCard concept={concept} /> */}
                         </Col>
                       );
                     })}
