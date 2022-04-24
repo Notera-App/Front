@@ -23,9 +23,11 @@ export const FlipActivity = ({ concept }) => {
       setIndex(index + 1);
     }
   };
+  //Funcion encargada de obtener la carta flip actual.
   useEffect(() => {
     setActualFlip(flips[index]);
   }, [index]);
+  //Funcion encargada de los giros de la carta flip.
   useEffect(() => {
     if (concept.content.length === 1) {
       let f = flips;
