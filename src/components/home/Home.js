@@ -1,5 +1,6 @@
 import { Accordion, Button, Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { TextToVoice } from "../elements/TextToVoice";
 import { useGlobalState } from "../GlobalState/GlobalState";
 import { NoteCardV } from "../Notes/NoteCardV";
 
@@ -9,6 +10,7 @@ export const Home = () => {
   return (
     <Container>
       <div className="d-grid gap-2">
+      <TextToVoice/>
         <Button className="principal-button" size="lg">
           Agregar nueva nota
         </Button>

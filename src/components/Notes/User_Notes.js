@@ -108,8 +108,8 @@ export const User_Notes = () => {
                     .map((concept) => {
                       return (
                         <Col className="mr-1 mb-1 mt-1" key={concept.title}>
-                          {/* <NoteCardV concept={concept} /> */}
-                          <NoteFlipCard concept={concept} />
+                          <NoteCardV concept={concept} />
+                          {/* <NoteFlipCard concept={concept} /> */}
                         </Col>
                       );
                     })}

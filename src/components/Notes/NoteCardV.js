@@ -4,6 +4,7 @@ import { MdOutlineFlipCameraAndroid } from "react-icons/md";
 import { AiTwotoneSound } from "react-icons/ai";
 import { AiFillQuestionCircle } from "react-icons/ai";
 import { Cont } from "./Cont";
+import { TextToVoice } from "../elements/TextToVoice";
 
 export const NoteCardV = ({ concept }) => {
   console.log(concept);
@@ -27,9 +28,7 @@ export const NoteCardV = ({ concept }) => {
             <Button className="icon-button" title="Voltear Card">
               <MdOutlineFlipCameraAndroid />
             </Button>
-            <Button className="icon-button" title="Convertir en Audio">
-              <AiTwotoneSound />
-            </Button>
+            <TextToVoice title={concept.title} content={concept.content} />
             <Button className="icon-button" title="Cuestionario">
               <AiFillQuestionCircle />
             </Button>
