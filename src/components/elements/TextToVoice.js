@@ -2,6 +2,7 @@ import { useSpeechSynthesis } from "react-speech-kit";
 import { AiTwotoneSound, AiFillPauseCircle } from "react-icons/ai";
 import { Button } from "react-bootstrap";
 
+//Componente encargado de convertir el texto a voz, esto se refiere a que una voz leera todo el texto dentro de sus limimtes.
 export const TextToVoice = ({ title, content }) => {
   const { speak, cancel, speaking } = useSpeechSynthesis();
   const { voices } = useSpeechSynthesis();
