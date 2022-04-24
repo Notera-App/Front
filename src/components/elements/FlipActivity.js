@@ -35,7 +35,6 @@ export const FlipActivity = ({ concept }) => {
         st: false,
       });
       setFlips(f);
-      nextFlip();
     } else {
       concept.content.forEach((element, index) => {
         if (
@@ -51,7 +50,6 @@ export const FlipActivity = ({ concept }) => {
           setFlips(f);
         }
       });
-      nextFlip();
     }
     if (flips.length) {
       setActualFlip({
@@ -77,13 +75,21 @@ export const FlipActivity = ({ concept }) => {
           <FlipCard {...actualFlip} />
           <Row className="text-center">
             <Col>
-            <Button variant="danger" className="mt-3 bg-Red" onClick={nextFlip}>
-                <AiOutlineDislike color="white" size={"30px"}/>
+              <Button
+                variant="danger"
+                className="mt-3 bg-Red"
+                onClick={nextFlip}
+              >
+                <AiOutlineDislike color="white" size={"30px"} />
               </Button>
             </Col>
             <Col>
-              <Button variant="success" className="mt-3 bg-Green" onClick={nextFlip}>
-                <AiOutlineLike color="white" size={"30px"}/>
+              <Button
+                variant="success"
+                className="mt-3 bg-Green"
+                onClick={nextFlip}
+              >
+                <AiOutlineLike color="white" size={"30px"} />
               </Button>
             </Col>
           </Row>
