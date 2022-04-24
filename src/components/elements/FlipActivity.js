@@ -53,7 +53,7 @@ export const FlipActivity = ({ concept }) => {
         }
       });
     }
-    if (flips.length) {
+    if (flips.length ===0) {
       setActualFlip({
         front: { value: "¿Listo para iniciar?", type: "title" },
         back: { value: "¿Listo para iniciar?", type: "title" },
