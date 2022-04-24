@@ -6,7 +6,8 @@ const { useGlobalState } = createGlobalState({
       {
         id: "React",
         name: "React",
-        description: "React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página. ",
+        description:
+          "React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página. ",
         concepts: [
           {
             title: "Historia de React",
@@ -14,7 +15,7 @@ const { useGlobalState } = createGlobalState({
             content: [
               {
                 value:
-                "React fue creado por Jordan Walke, un ingeniero de software de Facebook, quien liberó un primer prototipo de React llamado FaxJS. Este fue influenciado por XHP de HTML una librería de componentes para PHP. Este fue usado por primera vez en el Feed de Noticias de Facebook en 2011 y después en Instagram en 2012. Se volvió código abierto en la JSConf US in May 2013. React Native, permitió el desarrollo nativo para Android, iOS y UWP con React, esto fue anunciado por Facebook en la React Conf en febrero de 2015 y se volvió codigó abierto en marzo de 2015. El 18 de Abril de 2017, Facebook anuncio React Fiber, un nuevo conjunto de algoritmos internos para la renderización, esto es opuesto al viejo algoritmos de renderizado de React.",
+                  "React fue creado por Jordan Walke, un ingeniero de software de Facebook, quien liberó un primer prototipo de React llamado FaxJS. Este fue influenciado por XHP de HTML una librería de componentes para PHP. Este fue usado por primera vez en el Feed de Noticias de Facebook en 2011 y después en Instagram en 2012. Se volvió código abierto en la JSConf US in May 2013. React Native, permitió el desarrollo nativo para Android, iOS y UWP con React, esto fue anunciado por Facebook en la React Conf en febrero de 2015 y se volvió codigó abierto en marzo de 2015.",
                 type: "text",
               },
             ],
@@ -76,8 +77,7 @@ const { useGlobalState } = createGlobalState({
             MapaConceptual: "https://i.ibb.co/GW63c1v/Mapa-Conceptual2.png",
             content: [
               {
-                value:
-                  "Definicion de base de Datos",
+                value: "Definicion de base de Datos",
                 type: "title",
               },
               {
@@ -86,8 +86,7 @@ const { useGlobalState } = createGlobalState({
                 type: "text",
               },
               {
-                value:
-                  "Clasificación de bases de datos",
+                value: "Clasificación de bases de datos",
                 type: "title",
               },
               {
@@ -95,8 +94,8 @@ const { useGlobalState } = createGlobalState({
                   "Las bases de datos pueden clasificarse de varias maneras, de acuerdo al contexto que se esté manejando, la utilidad de las mismas o las necesidades que satisfagan.",
                 type: "text",
               },
-            ],                       
-          },          
+            ],
+          },
         ],
       },
     ],
