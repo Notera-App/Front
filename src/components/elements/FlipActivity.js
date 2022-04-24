@@ -54,15 +54,14 @@ export const FlipActivity = ({ concept }) => {
       });
     }
     console.log(flips);
-    if (flips.length === 0) {
+    if (flips.length !== 1) {
       setActualFlip({
         front: { value: "¿Listo para iniciar?", type: "title" },
         back: { value: "¿Listo para iniciar?", type: "title" },
         st: false,
       });
       console.log(flips.length);
-    }
-    if (flips.length === 1) {
+    } else {
       setActualFlip(flips[0]);
     }
   }, []);
