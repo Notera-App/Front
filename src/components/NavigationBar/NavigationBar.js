@@ -6,6 +6,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 import logo from "../../assets/Logo.png";
 
+//Barra de navegacion superior
 export const NavigationBar = () => {
   const handleLogin = () => {};
   const { user, isAuthenticated, isLoading } = useAuth0();
