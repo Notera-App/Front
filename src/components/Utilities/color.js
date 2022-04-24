@@ -1,3 +1,4 @@
+//Definicion de algunos colores a usar.
 export const COLORS = {
   orange: "#FF9F1C",
   peach: "#FFBF69",
