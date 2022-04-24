@@ -9,6 +9,7 @@ import { TextToVoice } from "../elements/TextToVoice";
 export const NoteCardV = ({ concept }) => {
   console.log(concept);
   return (
+    <div className="Card-Container">
     <Card className="Note-Card">
       <Card.Body>
         <Card.Title className="text-center">
@@ -38,5 +39,22 @@ export const NoteCardV = ({ concept }) => {
         <Card.Link href="#">Another Link</Card.Link> */}
       </Card.Body>
     </Card>
+    <Row>
+    <Col className="m-auto" sm>
+      <Button className="icon-button p-auto" title="Mapa Conceptual">
+        <BiSitemap />
+      </Button>
+      <Button className="icon-button" title="Voltear Card">
+        <MdOutlineFlipCameraAndroid />
+      </Button>
+      <Button className="icon-button" title="Convertir en Audio">
+        <AiTwotoneSound />
+      </Button>
+      <Button className="icon-button" title="Cuestionario">
+        <AiFillQuestionCircle />
+      </Button>
+    </Col>
+  </Row>
+  </div>
   );
 };

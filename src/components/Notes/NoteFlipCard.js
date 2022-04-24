@@ -1,9 +1,5 @@
 import ReactCardFlip from "react-card-flip";
-import { Button, Card, Col, Row } from "react-bootstrap";
-import { BiSitemap } from "react-icons/bi";
-import { MdOutlineFlipCameraAndroid } from "react-icons/md";
-import { AiTwotoneSound } from "react-icons/ai";
-import { AiFillQuestionCircle } from "react-icons/ai";
+import {Card} from "react-bootstrap";
 import { Cont } from "./Cont";
 import { useState } from "react";
 
