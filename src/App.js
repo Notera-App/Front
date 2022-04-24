@@ -15,6 +15,7 @@ import { Register_Notes } from "./components/Notes/Register_Notes";
 import { User_Notes } from "./components/Notes/User_Notes";
 import { Courses } from "./components/Courses/Courses";
 
+//Creacion de diferentes rutas a las que se accederan.
 function App() {
   return (
     <Router className="App">
