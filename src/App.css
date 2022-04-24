@@ -60,6 +60,15 @@
   background-color: #000 !important;
 }
 
+
+.bg-Red {
+  background-color: rgb(255, 0, 0) !important;
+}
+.bg-Green {
+  background-color: rgb(0, 175, 15) !important;
+}
+
+
 /* Text */
 .text-White {
   color: #FFFFFF !important;
@@ -217,7 +226,7 @@
   padding-top: 0.2em;
 }
 
-.FlipCard{
+.FlipCardYellow{
   background-color: #fdd975 !important;
   border-color: #F5CB5C !important; 
   box-shadow: 6px 0 4px -3px #111, -6px 0 4px -3px #111;
@@ -225,6 +234,13 @@
   width: 100%;
 }
 
+.FlipCardBlue{
+  background-color: #9af0da !important;
+  border-color: #5ca4f5 !important; 
+  box-shadow: 6px 0 4px -3px #111, -6px 0 4px -3px #111;
+  min-height: 20em;
+  width: 100%;
+}
 
 .Content-show{
   border: 1px solid #333533 !important;

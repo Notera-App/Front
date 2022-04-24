@@ -8,8 +8,8 @@ export const FlipActivityForCourse = ({ section }) => {
   const [show, setShow] = useState(false);
   const [index, setIndex] = useState(0);
   const [actualFlip, setActualFlip] = useState({
-    front: { value: "¿Listo para iniciar?", type: "title" },
-    back: { value: "¿Listo para iniciar?", type: "title" },
+    front: {},
+    back: {},
     st: false,
   });
 
@@ -81,13 +81,21 @@ export const FlipActivityForCourse = ({ section }) => {
           <FlipCard {...actualFlip} />
           <Row className="text-center">
             <Col>
-              <Button className="icon-button">
-                <AiOutlineDislike onClick={nextFlip} />
+              <Button
+                variant="danger"
+                className="mt-3 bg-Red"
+                onClick={nextFlip}
+              >
+                <AiOutlineDislike color="white" size={"30px"} />
               </Button>
             </Col>
             <Col>
-              <Button className="icon-button">
-                <AiOutlineLike onClick={nextFlip} />
+              <Button
+                variant="success"
+                className="mt-3 bg-Green"
+                onClick={nextFlip}
+              >
+                <AiOutlineLike color="white" size={"30px"}/>
               </Button>
             </Col>
           </Row>
