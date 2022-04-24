@@ -18,7 +18,7 @@ export const Courses = () => {
                 <div className="fw-bold">{section.name}</div>
                 {section.description}
               </div>
-              <Badge bg="primary" pill>
+              <Badge bg="warning" pill>
                 Número de notas: {section.concepts.length}
               </Badge>
             </ListGroup.Item>

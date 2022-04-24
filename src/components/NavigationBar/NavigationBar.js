@@ -10,9 +10,9 @@ export const NavigationBar = () => {
   const handleLogin = () => {};
   const { user, isAuthenticated, isLoading } = useAuth0();
   return (
-    <Navbar bg="Orange" expand="lg">
+    <Navbar bg="DarkGray" expand="lg">
       <Container>
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand className="text-Silver" as={Link} to="/">
           <img
             alt="Logo Notera"
             src={logo}
@@ -22,17 +22,17 @@ export const NavigationBar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">
+          <Nav className="me-auto text-Silver">
+            <Nav.Link className="text-Silver" as={Link} to="/">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/sections">
+            <Nav.Link className="text-Silver" as={Link} to="/sections">
               Mis cursos
             </Nav.Link>
-            <Nav.Link as={Link} to="/concepts">
+            <Nav.Link className="text-Silver" as={Link} to="/concepts">
               Mis notas
             </Nav.Link>
-            <NavDropdown title="Más" id="basic-nav-dropdown">
+            <NavDropdown className="text-Silver" title="Más" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/course-register">
                 Crear nuevo curso
               </NavDropdown.Item>

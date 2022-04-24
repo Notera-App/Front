@@ -25,7 +25,7 @@ export const NoteCardV = ({ concept }) => {
         className="color-pick-box"
         type="color"
         id="exampleColorInput"
-        defaultValue="#f4d06f"
+        defaultValue="#CFDBD5"
         title="Elige el color de la Nota"
         onChange={(e) => handleChangeColor(e.target.value)}
       />

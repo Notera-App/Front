@@ -34,29 +34,39 @@
 }
 
 /* Colores de Fondo y de Texto */
-.bg-Orange{
-  background-color: #FF9F1C !important;
+/* Bg */
+.bg-DarkGray{
+  background-color: #242423 !important;
 }
-.bg-Peach {
-  background-color: #FFBF69 !important;
+.bg-Gray {
+  background-color: #333533 !important;
 }
 .bg-White{
   background-color: #FFFFFF !important;
 }
-.bg-Sky {
-  background-color: #2EC4B6 !important;
+.bg-Yellow {
+  background-color: #F5CB5C !important;
 }
 
-.bg-LigthBlue {
-  background-color: #CBF3F0 !important;
+.bg-LigthGray {
+  background-color: #CFDBD5 !important;
+}
+
+.bg-Silver {
+  background-color: #E8EDDF !important;
 }
 
 .bg-Black {
   background-color: #000 !important;
 }
 
+/* Text */
 .text-White {
   color: #FFFFFF !important;
+}
+
+.text-Silver {
+  color: #E8EDDF !important;
 }
 
 .text-Peach {
@@ -73,6 +83,12 @@
   color: #CBF3F0;
 }
 
+/* Nav DroppDown */
+
+#basic-nav-dropdown{
+  color: #E8EDDF !important;
+}
+
 /* Containers */
 
 .Principal-Container{
@@ -83,46 +99,46 @@
 /* Botones */
 
 .principal-button{
-  background-color: #FF9F1C !important;
-  color: #000 !important;
+  background-color: #333533 !important;
+  color: #E8EDDF !important;
   border-style:solid;
-  border-color: #FF9F1C !important;
+  border-color: #333533 !important;
   margin-top: 1em;
   margin-bottom: 2em;
 }
 
 .principal-button:focus {
   z-index: 3;
-  border-color: #FF9F1C !important; 
+  border-color: #333533 !important; 
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgb(255 159 28 / 25%) !important;
+  box-shadow: 0 0 0 0.25rem rgb(51 53 51/ 25%) !important;
 }
 
 .secondary-button{
-  background-color: #000 !important;
-  color: #FF9F1C !important;
+  background-color: #E8EDDF !important;
+  color: #333533 !important;
   border-style:solid;
   width: 100%;
-  border-color: #000 !important;
+  border-color: #E8EDDF !important;
   margin-right: 1em;
   margin-bottom: 1em;
 }
 
 .secondary-button:focus{
-  background-color: #FF9F1C !important;
-  color: #000 !important;
+  background-color: #333533 !important;
+  color: #E8EDDF !important;
   border-style:solid;
-  border-color: #FF9F1C !important;
+  border-color: #333533 !important;
   margin-right: 1em;
   margin-bottom: 1em;
-  box-shadow: 0 0 0 0.25rem rgb(255 159 28 / 25%) !important;
+  box-shadow: 0 0 0 0.25rem rgb(51 53 51/ 25%) !important;
 }
 
 .icon-button{
-  background-color: #f4d06f !important;
+  background-color: #CFDBD5 !important;
   color: #000 !important;
   border-style:solid;
-  border-color: #f4d06f !important;
+  border-color: #CFDBD5 !important;
   border: none;
   margin: 1em;
   transition: all ease-in-out 0.2s;
@@ -136,33 +152,33 @@
 
 .icon-button:focus {
   z-index: 3;
-  border-color: #FF9F1C !important; 
+  border-color: #CFDBD5 !important; 
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgb(255 159 28 / 25%) !important;
+  box-shadow: 0 0 0 0.25rem rgb(51 53 51/ 25%) !important;
 }
 
 .login-button{
   background-color: #000 !important;
-  color: #FF9F1C !important;
+  color: #E8EDDF !important;
   border-style:solid;
-  width: 10%;
-  border-color: #000 !important;
+  width: 15%;
+  border-radius: 10%;
+  border-color: #E8EDDF !important;
   margin-right: 1em;
-  margin-bottom: 1em;
 }
 
 /* Buttons-Sections */
 .accordion-button:not(.collapsed) {
   color: #000 !important;
-  background-color: #FFBF69 !important;
+  background-color: #CFDBD5 !important;
   box-shadow: inset 0 -1px 0 rgb(0 0 0 / 1  3%);
 }
 
 .accordion-button:focus {
   z-index: 3;
-  border-color: #FF9F1C !important; 
+  border-color: #CFDBD5 !important; 
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgb(255 159 28 / 25%) !important;
+  box-shadow: 0 0 0 0.25rem rgb(51 53 51/ 25%) !important;
 }
 
 /* Floating Button */
@@ -181,31 +197,29 @@
 
 /* Cards */
 .Note-Card{
-  background-color: #f4d06f !important;
-  border-color: #FF9F1C !important; 
-  outline: 2;
+  background-color: #CFDBD5 !important;  
   min-height: 25em;
   max-height: 25em;  
   overflow-y: hidden;
 }
 .Note-Card:hover{
-  background-color: #f4d06f !important;
-  border-color: #FF9F1C !important; 
-  outline: 2;
+  background-color: #CFDBD5 !important;    
   min-height: 25em;
   max-height: 25em;
   overflow-y: scroll;
 }
 
 .Card-Container{
-  background-color: #f4d06f !important;
-  border-color: #FF9F1C !important; 
-  outline: 2;  
+  background-color: #CFDBD5 !important;
+  border-color: #333533 !important; 
+  border-style: solid;
+  border-radius: 10%;  
+  margin-bottom: 2em;
 }
 
 .FlipCard{
-  background-color: lightblue !important;
-  border-color: skyblue !important; 
+  background-color: #fdd975 !important;
+  border-color: #F5CB5C !important; 
   box-shadow: 6px 0 4px -3px #111, -6px 0 4px -3px #111;
   min-height: 20em;
   width: 100%;
@@ -213,7 +227,7 @@
 
 
 .Content-show{
-  border: 1px solid #000 !important;
+  border: 1px solid #333533 !important;
   outline: 2;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -232,7 +246,7 @@
 
 
 .Modal-Flip-Header{
-  background-color: skyblue !important;
+  background-color: #F5CB5C !important;
 }
 
 .Modal-Flip-Body{
@@ -243,7 +257,7 @@
 }
 
 .Modal-Conceptual-Header{
-  background-color: #f4845f !important;
+  background-color: #CFDBD5 !important;
 }
 
 .Modal-Conceptual-Body{
@@ -270,15 +284,15 @@
 /* Fields */
 .search-field:focus {
     z-index: 3;
-    border-color: #FF9F1C !important; 
+    border-color: #CFDBD5 !important; 
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgb(255 159 28 / 25%) !important;
+    box-shadow: 0 0 0 0.25rem rgb(51 53 51/ 25%) !important;
 }
 
 
 /* Color Pick */
 .color-pick-box{
-  margin: 0.5em;
+  margin: 0.8em;
   border-style: solid;  
   border-color: #000 !important;  
   height: 2em !important;
@@ -291,7 +305,7 @@
   border-color: #000 !important;     
   height: 2em !important;
   width: 2em !important;  
-  box-shadow: 0 0 0 0.25rem rgb(255 159 28 / 25%) !important;
+  box-shadow: 0 0 0 0.25rem rgb(51 53 51/ 25%) !important;
 }
 
 /* Media Style */
