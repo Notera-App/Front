@@ -17,6 +17,7 @@ import { useGlobalState } from "../GlobalState/GlobalState";
 import { Cont } from "./Cont";
 import { BsFillRecordCircleFill, BsPauseCircleFill } from "react-icons/bs";
 
+//Funcion encargada de registrar las notas creadas
 export const Register_Notes = () => {
   const navigate = useNavigate();
   const [title, setTitle] = useState("");
