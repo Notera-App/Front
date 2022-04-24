@@ -194,10 +194,11 @@
 }
 
 .FlipCard{
-  background-color: #f4d06f !important;
-  border-color: #f4d06f !important; 
+  background-color: lightblue !important;
+  border-color: skyblue !important; 
+  box-shadow: 6px 0 4px -3px #111, -6px 0 4px -3px #111;
+  min-height: 20em;
   width: 100%;
-  height: 100px;
 }
 
 
@@ -208,6 +209,20 @@
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+
+}
+.Modal-Flip{
+  background-color: #000000c0 !important;
+}
+
+.Modal-Flip-Header{
+  background-color: skyblue !important;
+}
+
+.Modal-Flip-Body{
+  background-color: white !important;
+  min-height: 25em;
+  max-height: 25em;
 
 }
 /* Text */

@@ -10,10 +10,6 @@ export const Home = () => {
   console.log(dataB);
   return (
     <Container>
-      <FlipCard
-        front={{ value: "Lado 1", type: "title" }}
-        back={{ value: "Lado 2", type: "text" }}
-      />
       <div className="d-grid gap-2">
         <Button className="principal-button" size="lg">
           Agregar nueva nota

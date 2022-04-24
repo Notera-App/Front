@@ -56,20 +56,24 @@ export const FlipActivity = ({ concept }) => {
         <MdOutlineFlipCameraAndroid />
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
+      <Modal show={show} onHide={handleClose} className="Modal-Flip">
+        <Modal.Header closeButton className="Modal-Flip-Header">
           <Modal.Title>Actividad Flip</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="Modal-Flip-Body">
           <FlipCard {...actualFlip} />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+            Salir
           </Button>
-          <Button variant="primary" onClick={nextFlip}>
-            Save Changes
-          </Button>
+          {flips.length > 1 ? (
+            <Button variant="primary" onClick={nextFlip}>
+              Siguiente
+            </Button>
+          ) : (
+            <></>
+          )}
         </Modal.Footer>
       </Modal>
     </>
