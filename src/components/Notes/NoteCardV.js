@@ -7,7 +7,6 @@ import { Cont } from "./Cont";
 import { TextToVoice } from "../elements/TextToVoice";
 
 export const NoteCardV = ({ concept }) => {
-  console.log(concept);
   return (
     <div className="Card-Container">
       <Card className="Note-Card">

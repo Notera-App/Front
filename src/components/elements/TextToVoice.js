@@ -5,8 +5,9 @@ import { Button } from "react-bootstrap";
 export const TextToVoice = ({ title, content }) => {
   const { speak } = useSpeechSynthesis();
   const { voices } = useSpeechSynthesis();
+  const voice = voices.filter((voice) => voice.lang === "es-ES")[0];
+
   let textF = title + "\n";
-  console.log(content);
   content?.forEach((element) => {
     if (element.type === "title" || element.type === "text") {
       textF = textF + element.value + "\n";
@@ -20,7 +21,7 @@ export const TextToVoice = ({ title, content }) => {
       onClick={() =>
         speak({
           text: textF,
-          voice: voices[0],
+          voice: voice,
         })
       }
     >

@@ -10,7 +10,6 @@ export const Home = () => {
   return (
     <Container>
       <div className="d-grid gap-2">
-      <TextToVoice/>
         <Button className="principal-button" size="lg">
           Agregar nueva nota
         </Button>
