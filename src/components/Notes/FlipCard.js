@@ -1,10 +1,13 @@
 import ReactCardFlip from "react-card-flip";
 import { Card, Image } from "react-bootstrap";
 import { Cont } from "./Cont";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const FlipCard = ({ front, back, st = false }) => {
   const [isFlipped, setFlip] = useState(st);
+  useEffect(() => {
+    setFlip(st);
+  },[front]);
 
   const handleClick = (e) => {
     e.preventDefault();
