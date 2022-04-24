@@ -12,19 +12,23 @@ export const Courses = () => {
   const [searchString, setSearchString] = useState("");
   const [category, setCategory] = useState("");
 
+  //Funcion encargada de evitar que la pagina se recarge, debido a que es una single page application
   const handleSubmit = (e) => {
     e.preventDefault();
     setShow(false);
   };
+  // Funcion encargada de filtrar categorias por el nombre.
   const handleSearchStringChange = (e) => {
     setSearchString(e.target.value);
   };
 
+  // Funcion encargada de filtrar las diferentes categorias dentro de las secciones.
   const handleSearchCategory = (e) => {
     handleClose()
     setCategory(e.target.name);
   };
 
+  //Lista de cursos
   return (
     <Container className="Principal-Container">
        <Button
@@ -75,7 +79,7 @@ export const Courses = () => {
         </Offcanvas.Body>
       </Offcanvas>
 
-
+   
     <ListGroup as="ul" className="mt-4">
       {dataB?.sections?.filter(
         (section) =>                
