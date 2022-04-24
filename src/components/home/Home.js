@@ -10,7 +10,6 @@ import SpeechtoText from "../elements/voiceToText";
 //Vista principal de la aplicacion.
 export const Home = () => {
   const [dataB] = useGlobalState("dataB");
-  console.log(dataB);
   return (
     <Container>
       <div className="d-grid gap-2">

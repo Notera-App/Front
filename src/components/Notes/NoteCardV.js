@@ -15,11 +15,9 @@ export const NoteCardV = ({ concept }) => {
   const [color, setColor] = useState("f4d06f");
 
   const handleChangeColor = (val) => {
-    console.log(val);
     setColor(val);
   };
 
-  console.log(concept);
   return (
     <div className="Card-Container">
       <Form.Control
