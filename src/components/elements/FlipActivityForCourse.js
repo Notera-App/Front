@@ -4,6 +4,7 @@ import { MdOutlineFlipCameraAndroid } from "react-icons/md";
 import { FlipCard } from "../Notes/FlipCard";
 import { AiOutlineDislike, AiOutlineLike } from "react-icons/ai";
 
+//Componente encargado de generar las cartas flip que seran usadas en los cursos como metodo de aprendizaje.
 export const FlipActivityForCourse = ({ section }) => {
   const [show, setShow] = useState(false);
   const [index, setIndex] = useState(0);
