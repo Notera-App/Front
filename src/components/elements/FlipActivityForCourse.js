@@ -42,8 +42,8 @@ export const FlipActivityForCourse = ({ section }) => {
       } else {
         concept.content.forEach((element, index) => {
           if (
-            element.type === "title" &&
-            concept.content[index + 1]?.type === "text"
+            element?.type === "title" &&
+            concept?.content[index + 1]?.type === "text"
           ) {
             let f = flips;
             f.push({
