@@ -193,6 +193,13 @@
   outline: 2;  
 }
 
+.FlipCard{
+  background-color: #f4d06f !important;
+  border-color: #f4d06f !important; 
+  width: 60%;
+  height: auto;
+}
+
 
 .Content-show{
   border: 1px solid #000 !important;
