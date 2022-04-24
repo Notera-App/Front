@@ -10,6 +10,7 @@ import { getValue } from "@testing-library/user-event/dist/utils";
 import { FlipActivity } from "../elements/FlipActivity";
 import { ConceptualMap } from "../elements/ConceptualMap";
 
+//Estructura de la flip card
 export const NoteCardV = ({ concept }) => {
   const [color, setColor] = useState("f4d06f");
 
