@@ -8,8 +8,8 @@ export const FlipActivityForCourse = ({ section }) => {
   const [show, setShow] = useState(false);
   const [index, setIndex] = useState(0);
   const [actualFlip, setActualFlip] = useState({
-    front: {},
-    back: {},
+    front: { value: "¿Listo para iniciar?", type: "title" },
+    back: { value: "¿Listo para iniciar?", type: "title" },
     st: false,
   });
 
