@@ -9,8 +9,6 @@ _El despliegue de la plataforma se realalizó en Heroku._
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
 * [React](https://es.reactjs.org/) 
 * [React-Boostrap](https://react-bootstrap.github.io/) 
 
