@@ -228,6 +228,25 @@
     box-shadow: 0 0 0 0.25rem rgb(255 159 28 / 25%) !important;
 }
 
+
+/* Color Pick */
+.color-pick-box{
+  margin: 0.5em;
+  border-style: solid;  
+  border-color: #000 !important;  
+  height: 2em !important;
+  width: 2em !important;  
+}
+
+.color-pick-box:focus{
+  margin: 0.5em;
+  border-style: solid;  
+  border-color: #000 !important;     
+  height: 2em !important;
+  width: 2em !important;  
+  box-shadow: 0 0 0 0.25rem rgb(255 159 28 / 25%) !important;
+}
+
 /* Media Style */
 
 @media only screen and (max-width: 900px) {
