@@ -8,6 +8,7 @@ import { Cont } from "./Cont";
 export const NoteCardV = ({ concept }) => {
   console.log(concept);
   return (
+    <div className="Card-Container">
     <Card className="Note-Card">
       <Card.Body>
         <Card.Title className="text-center">
@@ -18,26 +19,25 @@ export const NoteCardV = ({ concept }) => {
         </Card.Subtitle>
         <Card.Text>
           <Cont content={concept.content} />
-        </Card.Text>
-        <Row>
-          <Col className="m-auto" sm>
-            <Button className="icon-button p-auto" title="Mapa Conceptual">
-              <BiSitemap />
-            </Button>
-            <Button className="icon-button" title="Voltear Card">
-              <MdOutlineFlipCameraAndroid />
-            </Button>
-            <Button className="icon-button" title="Convertir en Audio">
-              <AiTwotoneSound />
-            </Button>
-            <Button className="icon-button" title="Cuestionario">
-              <AiFillQuestionCircle />
-            </Button>
-          </Col>
-        </Row>
-        {/* <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link> */}
+        </Card.Text>                
       </Card.Body>
     </Card>
+    <Row>
+    <Col className="m-auto" sm>
+      <Button className="icon-button p-auto" title="Mapa Conceptual">
+        <BiSitemap />
+      </Button>
+      <Button className="icon-button" title="Voltear Card">
+        <MdOutlineFlipCameraAndroid />
+      </Button>
+      <Button className="icon-button" title="Convertir en Audio">
+        <AiTwotoneSound />
+      </Button>
+      <Button className="icon-button" title="Cuestionario">
+        <AiFillQuestionCircle />
+      </Button>
+    </Col>
+  </Row>
+  </div>
   );
 };

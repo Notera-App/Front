@@ -174,7 +174,23 @@
   background-color: #f4d06f !important;
   border-color: #FF9F1C !important; 
   outline: 2;
+  min-height: 25em;
+  max-height: 25em;  
+  overflow-y: hidden;
+}
+.Note-Card:hover{
+  background-color: #f4d06f !important;
+  border-color: #FF9F1C !important; 
+  outline: 2;
+  min-height: 25em;
+  max-height: 25em;
+  overflow-y: scroll;
+}
 
+.Card-Container{
+  background-color: #f4d06f !important;
+  border-color: #FF9F1C !important; 
+  outline: 2;  
 }
 
 

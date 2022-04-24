@@ -4,39 +4,39 @@ const { useGlobalState } = createGlobalState({
   dataB: {
     sections: [
       {
-        id: "Ciencias naturales",
-        name: "Ciencias naturales",
-        description: "Mi notas de ciencias naturales",
+        id: "React",
+        name: "React",
+        description: "React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página. ",
         concepts: [
           {
-            title: "Célula procariota",
-            description: "Tipo de celula",
+            title: "Historia de React",
+            description: "La historia de React a traves del tiempo",
             content: [
               {
                 value:
-                  "La primera categorización de las células se hace en base a la presencia o la ausencia de un núcleo. Así, según esta clasificación, encontramos a las células procariotas y las eucariotas. ",
+                "React fue creado por Jordan Walke, un ingeniero de software de Facebook, quien liberó un primer prototipo de React llamado FaxJS. Este fue influenciado por XHP de HTML una librería de componentes para PHP. Este fue usado por primera vez en el Feed de Noticias de Facebook en 2011 y después en Instagram en 2012. Se volvió código abierto en la JSConf US in May 2013. React Native, permitió el desarrollo nativo para Android, iOS y UWP con React, esto fue anunciado por Facebook en la React Conf en febrero de 2015 y se volvió codigó abierto en marzo de 2015. El 18 de Abril de 2017, Facebook anuncio React Fiber, un nuevo conjunto de algoritmos internos para la renderización, esto es opuesto al viejo algoritmos de renderizado de React.",
                 type: "text",
               },
             ],
           },
           {
-            title: "Célula eucariota",
-            description: "Tipo de celula",
+            title: "Virtual DOM",
+            description: "Características de React",
             content: [
               {
                 value:
-                  "La célula eucariota sí tiene un núcleo que encapsula a la información genética, que se encuentra además ordenada en cromosomas, y sus organelos también cuentan con membrana. La síntesis de su ARN ocurre en el núcleo, y las proteínas son sintetizadas por los ribosomas en el citoplasma",
+                  "React mantiene un virtual DOM propio, en lugar de confiar solamente en el DOM del navegador. Esto deja a la biblioteca determinar qué partes del DOM han cambiado comparando contenidos entre la versión nueva y la almacenada en el virtual DOM, y utilizando el resultado para determinar cómo actualizar eficientemente el DOM del navegador. Propiedades (props) de react.",
                 type: "text",
               },
             ],
           },
           {
-            title: "Célula vegetal",
-            description: "Tipo de celula",
+            title: "Las propiedades",
+            description: "Características de React",
             content: [
               {
                 value:
-                  "Los organismos vegetales requieren de un soporte, proporcionado por la vacuola central que se llena de agua para generar turgencia y rigidez, así como esta también es proporcionada por sus paredes celulares de celulosa y lignina",
+                  "Las propiedades (también conocidas como 'props') pueden definirse como los atributos de configuración para dicho componente. Éstas son recibidas desde un nivel superior, normalmente al realizar la instancia del componente y por definición son inmutables.",
                 type: "text",
               },
             ],
