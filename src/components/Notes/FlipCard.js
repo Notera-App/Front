@@ -26,11 +26,11 @@ export const FlipCard = ({ front, back }) => {
       {/* Parte Trasera de la Card */}
       <button className="m-0 p-0" onClick={handleClick} className="FlipCard">
         {back.type === "title" ? (
-          <h4 className="text-center">{front.value}</h4>
+          <h4 className="text-center">{back.value}</h4>
         ) : (
           <></>
         )}
-        {back.type === "text" ? <p>{front.value}</p> : <></>}
+        {back.type === "text" ? <p>{back.value}</p> : <></>}
         {back.type === "image" ? <Image fluid src={front.value} /> : <></>}
       </button>
     </ReactCardFlip>

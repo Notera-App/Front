@@ -7,21 +7,20 @@ import { Cont } from "./Cont";
 import { TextToVoice } from "../elements/TextToVoice";
 import { useState } from "react";
 import { getValue } from "@testing-library/user-event/dist/utils";
+import { FlipActivity } from "../elements/FlipActivity";
 
 export const NoteCardV = ({ concept }) => {
   const [color, setColor] = useState("f4d06f");
 
-  const handleChangeColor = (val) => {   
-    console.log(val)
+  const handleChangeColor = (val) => {
+    console.log(val);
     setColor(val);
   };
 
-
-
   console.log(concept);
   return (
-    <div className="Card-Container">     
-      <Form.Control 
+    <div className="Card-Container">
+      <Form.Control
         className="color-pick-box"
         type="color"
         id="exampleColorInput"
@@ -29,9 +28,12 @@ export const NoteCardV = ({ concept }) => {
         title="Elige el color de la Nota"
         onChange={(e) => handleChangeColor(e.target.value)}
       />
-      <Card className="Note-Card" style={{
-              backgroundColor: {color},             
-            }}>
+      <Card
+        className="Note-Card"
+        style={{
+          backgroundColor: { color },
+        }}
+      >
         <Card.Body>
           <Card.Title className="text-center">
             <h2>{concept.title}</h2>
@@ -49,9 +51,7 @@ export const NoteCardV = ({ concept }) => {
           <Button className="icon-button p-auto" title="Mapa Conceptual">
             <BiSitemap />
           </Button>
-          <Button className="icon-button" title="Voltear Card">
-            <MdOutlineFlipCameraAndroid />
-          </Button>
+          <FlipActivity concept={concept} />
           <TextToVoice title={concept.title} content={concept.content} />
           <Button className="icon-button" title="Cuestionario">
             <AiFillQuestionCircle />

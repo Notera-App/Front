@@ -196,8 +196,8 @@
 .FlipCard{
   background-color: #f4d06f !important;
   border-color: #f4d06f !important; 
-  width: 60%;
-  height: auto;
+  width: 100%;
+  height: 100px;
 }
 
 
