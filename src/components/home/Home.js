@@ -32,7 +32,7 @@ export const Home = () => {
             >
               <Accordion.Header>{section.name}</Accordion.Header>
               <Accordion.Body>
-                <Row lg={3}>
+                <Row xs="1" sm="1" md="2" lg="3">
                   {section?.concepts?.map((concept) => {
                     return (
                       <Col key={concept.title}>

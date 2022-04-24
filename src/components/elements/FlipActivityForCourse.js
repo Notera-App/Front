@@ -8,8 +8,8 @@ export const FlipActivityForCourse = ({ section }) => {
   const [show, setShow] = useState(false);
   const [index, setIndex] = useState(0);
   const [actualFlip, setActualFlip] = useState({
-    front: {},
-    back: {},
+    front: { value: "¿Listo para iniciar?", type: "title" },
+    back: { value: "¿Listo para iniciar?", type: "title" },
     st: false,
   });
 
@@ -42,8 +42,8 @@ export const FlipActivityForCourse = ({ section }) => {
       } else {
         concept.content.forEach((element, index) => {
           if (
-            element.type === "title" &&
-            concept.content[index + 1]?.type === "text"
+            element?.type === "title" &&
+            concept?.content[index + 1]?.type === "text"
           ) {
             let f = flips;
             f.push({
@@ -57,7 +57,14 @@ export const FlipActivityForCourse = ({ section }) => {
       }
     });
 
-    console.log(flips.length);
+    if (flips.length) {
+      setActualFlip({
+        front: { value: "¿Listo para iniciar?", type: "title" },
+        back: { value: "¿Listo para iniciar?", type: "title" },
+        st: false,
+      });
+      console.log(flips.length);
+    }
   }, []);
 
   return (
@@ -75,12 +82,12 @@ export const FlipActivityForCourse = ({ section }) => {
           <Row className="text-center">
             <Col>
               <Button className="icon-button">
-                <AiOutlineDislike />
+                <AiOutlineDislike onClick={nextFlip} />
               </Button>
             </Col>
             <Col>
               <Button className="icon-button">
-                <AiOutlineLike />
+                <AiOutlineLike onClick={nextFlip} />
               </Button>
             </Col>
           </Row>
