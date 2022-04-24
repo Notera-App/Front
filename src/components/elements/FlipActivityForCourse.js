@@ -19,6 +19,7 @@ export const FlipActivityForCourse = ({ section }) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  //funcion encargada de pasar la carta.
   const nextFlip = () => {
     if (flips.length - 1 === index) {
       setIndex(0);
@@ -30,6 +31,7 @@ export const FlipActivityForCourse = ({ section }) => {
     setActualFlip(flips[index]);
   }, [index]);
 
+  //Funcion encargada de las animaciones y la configuracion de la informacion al momento de la visualizacion.
   useEffect(() => {
     section.concepts.forEach((concept) => {
       if (concept.content.length === 1) {
