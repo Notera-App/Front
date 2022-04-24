@@ -91,7 +91,39 @@
   margin-bottom: 2em;
 }
 
-/* Sections */
+.secondary-button{
+  background-color: #000 !important;
+  color: #FF9F1C !important;
+  border-style:solid;
+  border-color: #000 !important;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.icon-button{
+  background-color: #f4d06f !important;
+  color: #000 !important;
+  border-style:solid;
+  border-color: #f4d06f !important;
+  border: none;
+  margin: 1em;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.icon-button:hover{
+  border: 1px solid #888;
+  background-color: #ddd;
+}
+
+.icon-button:focus {
+  z-index: 3;
+  border-color: #FF9F1C !important; 
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(255 159 28 / 25%) !important;
+}
+
+/* Buttons-Sections */
 .accordion-button:not(.collapsed) {
   color: #000 !important;
   background-color: #FFBF69 !important;
@@ -108,8 +140,24 @@
 /* Cards */
 .Note-Card{
   background-color: #f4d06f !important;
+  border-color: #FF9F1C !important; 
+  outline: 2;
+
 }
 
+/* Text */
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.text-left{
+  text-align: left;
+}
 /* Elements Style */
 
 @keyframes App-logo-spin {
